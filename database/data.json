@@ -1,0 +1,21 @@
+{
+    "getAnimationList": [
+      {
+        "id": 1,
+        "url": "https://drive.google.com/file/d/1YkOHrA0VgBTBEq6CqjBXkgsj_FWsF5fM/view?usp=sharing"
+      },
+      {
+        "id": 2,
+        "url": "https://drive.google.com/file/d/11Nz000vOXTn5yGyg4S0YFEzyN09lEQrZ/view?usp=sharing"
+      },
+      {
+        "id": 3,
+        "url": "https://drive.google.com/file/d/1Q8GOnkq57L6DiWg-6WRvOE-WqMCUEkf2/view?usp=sharing"
+      },
+      {
+        "id": 4,
+        "url": "https://drive.google.com/file/d/1FvH7GfUOPRdPGWAYJJ_stTGAkIxkVOAf/view?usp=sharing"
+      }
+    ]
+  }
+  

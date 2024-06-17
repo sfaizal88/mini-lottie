@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+/**
+ * App component
+ * @author - Faizal
+ * @date - 12th June 2024
+ */
+// GENERIC IMPORT
+import { ApolloProvider } from '@apollo/client';
+import { Provider } from 'react-redux';
+
+// COMPONENT IMPORT 
+import Header from './view/pages/common/header';
+import Dashboard from './view/pages/dashboard';
+
+// API IMPORT
+import {client} from './api/client';
+
+// CONTEXT
+import { store } from './context/store';
+
+// STYLE IMPORT
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ApolloProvider client={client}>
+        <Header/>
+        <Dashboard/>
+      </ApolloProvider>
+    </Provider>
   );
 }
 

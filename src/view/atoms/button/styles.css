@@ -1,0 +1,41 @@
+/**
+ * Button screen style file
+ * @author - Faizal
+ * @date - 12th June 2024
+ */
+ .secondary-button {
+    background: #f3f6f8;
+    border: 1px solid #f3f6f8;
+    color: #20272c;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+ }
+ .secondary-button:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    color: #222;
+ }
+ .fullwidth-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+ }
+ .primary-button {
+   background: #16a085;
+   border: 1px solid #16a085;
+   color: #fff;
+   font-weight: 600;
+   font-size: 12px;
+   padding: 8px 16px;
+   border-radius: 4px;
+   text-align: center;
+}
+.primary-button:hover {
+   cursor: pointer;
+   background-color: #1abc9c;
+   color: #fff;
+   border: 1px solid #1abc9c;
+}

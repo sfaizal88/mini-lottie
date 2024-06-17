@@ -1,0 +1,20 @@
+/**
+ * Empty screen style file
+ * @author - Faizal
+ * @date - 12th June 2024
+ */
+ .empty-container {
+   text-align: center;
+   margin: 40px 16px;
+ }
+ .empty-title {
+   font-weight: bold;
+   font-size: 15px;
+   margin-bottom: 4px;
+   color: #95a5a6;
+ }
+ .empty-subtitle {
+   font-size: 12px;
+   color: #95a5a6;
+   max-width: 300px;   
+ }

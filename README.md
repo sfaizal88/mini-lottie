@@ -44,3 +44,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Feature
+1. Upload JSON file - Done
+2. Manipulate SPEED property - Done
+3. Manipulate Color property.
+4. Manipulate Scale property - Done
+5. View eye - layer management.
+6. Select and remove multiple layer.
+7. Multi-user edit feature - socket
+8. import an animation from the featured animations on LottieFiles website, utilize LottieFiles GraphQL API to fetch and showcase the featured animations for importing.
