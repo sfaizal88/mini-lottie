@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mini-lottie/static/css/main.5bc52f9d.css",
+    "main.js": "/mini-lottie/static/js/main.314374f7.js",
+    "static/js/453.d80e49d5.chunk.js": "/mini-lottie/static/js/453.d80e49d5.chunk.js",
+    "static/media/logo.png": "/mini-lottie/static/media/logo.bc54e956e0aced38e9f1.png",
+    "index.html": "/mini-lottie/index.html",
+    "main.5bc52f9d.css.map": "/mini-lottie/static/css/main.5bc52f9d.css.map",
+    "main.314374f7.js.map": "/mini-lottie/static/js/main.314374f7.js.map",
+    "453.d80e49d5.chunk.js.map": "/mini-lottie/static/js/453.d80e49d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bc52f9d.css",
+    "static/js/main.314374f7.js"
+  ]
+}
