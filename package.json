@@ -1,5 +1,6 @@
 {
   "name": "mini-lottie",
+  "homepage": "https://sfaizal88.github.io/mini-lottie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,7 @@
     "clsx": "^2.1.1",
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "gh-pages": "^6.1.1",
     "graphql": "^16.8.1",
     "lottie-react": "^2.4.0",
     "lottie-web": "^5.12.2",
@@ -36,6 +38,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "db": "json-server --watch database/data.json --port 3001"
   },
   "eslintConfig": {
