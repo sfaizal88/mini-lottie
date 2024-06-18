@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The goal of this project is to create a mini real-time Lottie animation editor. The application includes the following features:\
+The goal of this project is to create a mini real-time Lottie animation editor. The application includes the following features:
 
 - JSON Upload: Users can upload a JSON file to edit the animation.
 - Property Manipulation: Users can adjust properties like speed, color, and scale.
@@ -26,7 +26,11 @@ You will also see any lint errors in the console.
 
 ### `node server/index.js`
 
-Runs the backend server to support socket / multi user.\
+Runs the backend server to support socket / multi user.
+
+### `npm run deploy`
+
+Runs the frontend code deployment in github server and you can visit the github page to check the output [https://github.com/sfaizal88/mini-lottie/settings/pages](https://github.com/sfaizal88/mini-lottie/settings/pages) to check whether its deployed. You can check the output directly at the website link [https://sfaizal88.github.io/mini-lottie/](https://sfaizal88.github.io/mini-lottie/)
 
 ## Feature
 
