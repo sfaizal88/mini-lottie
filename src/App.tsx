@@ -17,9 +17,6 @@ import {client} from './api/client';
 // CONTEXT
 import { store } from './context/store';
 
-// STYLE IMPORT
-import './App.css';
-
 function App() {
   return (
     <Provider store={store}>
