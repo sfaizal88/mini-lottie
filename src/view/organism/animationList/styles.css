@@ -9,6 +9,7 @@
     height: 130px;
     box-sizing: border-box;
     overflow: auto;
+    z-index: 2;
 }
 .animation-list {
     list-style: none;

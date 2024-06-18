@@ -23,7 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-
 ### `node server/index.js`
 
 Runs the backend server to support socket / multi user.
@@ -41,3 +40,17 @@ Runs the frontend code deployment in github server and you can visit the github 
 - Multi-user editing of the same Lottie animation.
 - Showcase of LottieFiles for users to select (The GraphQL link you shared keeps loading and stops with the logo, so I created an alternative method to display it).
 - Save file features to the database, including completed queries and database connections.
+
+## Planned feature
+
+- Real time edition of the json file.
+- File upload validation.
+- Multi color layer update.
+- Scale / speed update for each layer.
+- Layer selection shown in the viewer section.
+- Download feature in gif format.
+- Adding play and pause like controller for the animation.
+- Validation for speed and scale field.
+- Controlling proper error message and success message.
+- Support multi language.
+- Support different device and responsive design.
