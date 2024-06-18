@@ -35,16 +35,16 @@ const PropertyEditor = ({
         const { name, value } = e.target;
         onChange(name, name === 'speed' || name === 'scale' ? parseFloat(value) : value);
     };
-    
+
     return (
         <div>
             <div className='fieldset'>
                 <label className='fieldlabel'>Speed</label>
-                <input type="number" className='textfield' name="speed" value={properties.speed} onChange={handleChange} />
+                <input type="number" className='textfield' placeholder='Enter the speed' name="speed" value={properties.speed} onChange={handleChange} />
             </div>
             <div className='fieldset'>
                 <label className='fieldlabel'>Scale</label>
-                <input type="number" className='textfield' name="scale" value={properties.scale} onChange={handleChange} />
+                <input type="number" className='textfield' placeholder='Enter the scale in number' name="scale" value={properties.scale} onChange={handleChange} />
             </div>
             {targetLayerName && <div className='fieldset'>
                 <label className='fieldlabel'>Color</label>
