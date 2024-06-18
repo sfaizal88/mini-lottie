@@ -54,3 +54,14 @@ Runs the frontend code deployment in github server and you can visit the github 
 - Controlling proper error message and success message.
 - Support multi language.
 - Support different device and responsive design.
+
+## Screenshots
+Initial screen
+![Screenshot 2024-06-18 at 5 39 19 PM](https://github.com/sfaizal88/mini-lottie/assets/16524711/7d02a663-6db1-4e62-bf7a-07530f76f957)
+
+Animation after json upload / select animation from below list
+![Screenshot 2024-06-18 at 5 39 33 PM](https://github.com/sfaizal88/mini-lottie/assets/16524711/8baeb35d-2c30-4c35-878a-07f0d385432c)
+
+Changing color of the layer
+![Screenshot 2024-06-18 at 5 39 45 PM](https://github.com/sfaizal88/mini-lottie/assets/16524711/14542cd7-7286-46b3-b5bb-7629bced6423)
+
