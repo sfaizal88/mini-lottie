@@ -24,8 +24,8 @@ import { updateAnimateData, updateTargetName } from '../../../context/animateSli
 export const socket = io('http://localhost:4000');
 
 const Dashboard = () => {
+    // DECLARE LOCAL VARIABLE
     const animationData = useSelector((state: {animate: animateType}) => state.animate.animationData);
-    const targetLayerName = useSelector((state: {animate: animateType}) => state.animate.targetLayerName);
     const dispatch = useDispatch();
     const [userId, setUserId] = useState(null);
     const [properties, setProperties] = useState<PropertiesType>({
@@ -34,19 +34,23 @@ const Dashboard = () => {
         color: '#000000',
     });
 
+    // HANDLE UPLOAD FILE EVENT
     const handleFileUpload = (data: any) => {
         dispatch(updateAnimateData({ animationData: data }));
     };
 
+    // HANDLE TO UPDATE TARGET NAME
     const handleTargetNameUpdate = (updatedTargetName: string) => {
         dispatch(updateTargetName({ targetLayerName: updatedTargetName}));
     };
 
+    // HANDLE UPDATE LAYER
     const handleLayerUpdate = (updatedLayers: any[]) => {
         dispatch(updateAnimateData({ animationData: {...animationData, layers: updatedLayers} }));
         socketEmit({ ...animationData, layers: updatedLayers });
     };
 
+    // HANDLE TO UPDATE PROPERTY
     const handlePropertyChange = (name: string, value: string | number) => {
         setProperties((prevProps) => {
             return {
@@ -55,15 +59,19 @@ const Dashboard = () => {
         }});
     };
 
+    // HANDLE EMIT SOCKET DATA
     const socketEmit = (data: any) => {
         socket.emit('sendJson', {...data, userId});
     }
 
+    // USE EFFECT TRIGGERED ONLOAD
     useEffect(() => {
+        // TRIGGED TO SIGN FOR THE USER BY ID
         socket.on('assignId', (id) => {
             setUserId(id);
         });
 
+        // TRIGGERED WHEN WE RECEIVE JSON
         socket.on('receiveJson', (data) => {
             if (data.userId !== userId) {
                 handleFileUpload(data);

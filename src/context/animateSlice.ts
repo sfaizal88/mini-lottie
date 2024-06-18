@@ -6,15 +6,19 @@
 // GENERIC IMPORT
 import { createSlice } from '@reduxjs/toolkit';
 
+// ANIMATE TYPE
 export type animateType = {
   animationData?: any | null;
   targetLayerName?: "";
 }
+
+// INITIAL STATE
 const initialState: animateType = {
     animationData: null,
     targetLayerName: ""
 };
 
+// REDUCER
 const animateSlice = createSlice({
   name: 'animate',
   initialState,

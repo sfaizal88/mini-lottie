@@ -6,6 +6,7 @@
 // GENERIC IMPORT
 import React from 'react';
 
+// COMPONENT PROPS TYPE
 type FileUploadProps = {
     onFileUpload: (data: any) => void;
 };
@@ -13,6 +14,7 @@ type FileUploadProps = {
 const FileUpload = ({
     onFileUpload
 }: FileUploadProps ) => {
+    // HANDLE FILE UPLOAD EVENT
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
         if (file) {

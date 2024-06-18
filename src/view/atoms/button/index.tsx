@@ -9,6 +9,7 @@ import clsx from 'clsx';
 // STYLE IMPORT
 import './styles.css';
 
+// COMPONENT PROPS
 type ButtonProps = {
     label: string;
     onClick: () => void;

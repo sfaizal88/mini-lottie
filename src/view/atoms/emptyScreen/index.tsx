@@ -9,6 +9,7 @@ import React from 'react';
 // STYLE IMPORT
 import './styles.css';
 
+// COMPONENT PROPS
 type EmptyScreenProps = {
     title: string;
     subtitle: string;

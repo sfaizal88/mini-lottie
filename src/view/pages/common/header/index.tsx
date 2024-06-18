@@ -12,13 +12,11 @@ import LogoImage from '../../../../assests/img/logo.png';
 // STYLE IMPORT
 import './styles.css';
 
-const Header = () => {
-    return (
-        <header>
-            <img src={LogoImage} height={30} alt='Mini Lottie logo'/>
-            <div className='header-title'><strong>Mini Lottie</strong> Editor</div>
-        </header>
-    )
-}
+const Header = () => (
+    <header>
+        <img src={LogoImage} height={30} alt='Mini Lottie logo'/>
+        <div className='header-title'><strong>Mini Lottie</strong> Editor</div>
+    </header>
+)
 
 export default Header;

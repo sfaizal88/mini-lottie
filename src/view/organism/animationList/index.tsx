@@ -12,15 +12,18 @@ import {listJSONS, LottieFileType} from './data/list';
 // STYLE IMPORT
 import './styles.css';
 
-
+// COMPONENT TYPES
 type AnimationListProps = {
     onAnimateUpload: (data: any) => void;
     onSocketEmit: (data: any) => void;
 };
+
 const AnimationList = ({
     onAnimateUpload,
     onSocketEmit,
 }: AnimationListProps) => {
+
+    // HANDLE CLICK EVENT
     const handleClickEvent = (data: any) => {
         onAnimateUpload(data);
         onSocketEmit(data);

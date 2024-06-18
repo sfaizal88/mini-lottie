@@ -18,12 +18,14 @@ import {rgbToHex} from '../../../../utils';
 import type {animateType} from '../../../../context/animateSlice';
 import { updateTargetName } from '../../../../context/animateSlice';
 
+// COMPONENT PROPS TYPE
 type LayerProps = {
     nm: string,
     selected?: boolean,
     visible?: boolean,
 }
 
+// COMPONENT PROPS TYPE
 type LayerManagerProps = {
     onUpdateLayers: (layers: LayerProps[]) => void,
     onChangeTargetName: (name: string) =>  void,
@@ -35,6 +37,7 @@ const LayerManager = ({
     onChangeTargetName,
     onChangeProperty,
 }: LayerManagerProps) => {
+    // DECLARE LOCAL VARIABLE
     const animationData = useSelector((state: {animate: animateType}) => state.animate.animationData);
     const [layers, setLayers] = useState<LayerProps[]>([]);
     const [selectedTargetName, setSelectedTargetName] = useState<string>("");
@@ -46,6 +49,7 @@ const LayerManager = ({
         }
     }, [animationData]);
     
+    // HANDLE REMOVE ALL SELECTED LAYERS
     const handleRemoveLayers = () => {
         const updatedLayers = layers.filter(layer => !layer.selected);
         setLayers(updatedLayers);
@@ -53,6 +57,7 @@ const LayerManager = ({
         onUpdateLayers(updatedLayers);
     };
 
+    // HANDLE REMOVE SEPCIFIC LAYER
     const handleRemoveSpecificLayer = (selectedId: number) => {
         const updatedLayers = layers.filter((item: any, index: number) => item && selectedId !== index);
         setLayers(updatedLayers);
@@ -60,12 +65,14 @@ const LayerManager = ({
         onUpdateLayers(updatedLayers);
     };
     
+    // TOGGLER LAYER SELECTION
     const toggleLayerSelection = (index: number) => {
         const updatedLayers = [...layers];
         updatedLayers[index].selected = !updatedLayers[index].selected;
         setLayers(updatedLayers);
     };
 
+    // HANDLE UPDATE TARGET NAME
     const handleUpdateTargetName = (layerName: string) => {
         const layers = animationData.layers;
         const layerIndex = layers.findIndex((layer: any) => layer.nm === layerName);
@@ -87,6 +94,7 @@ const LayerManager = ({
         
     }
 
+    // SAVE FILE TRIGGER TO BACKEND
     const saveFile = async () => {
         const response = await fetch('http://localhost:4000/saveFile', {
             method: 'POST',

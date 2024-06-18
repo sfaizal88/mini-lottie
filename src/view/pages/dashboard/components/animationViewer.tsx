@@ -18,6 +18,7 @@ import { updateTargetName } from '../../../../context/animateSlice';
 // STYLE IMPORT
 import '../styles.css';
 
+// COMPONENT PROPS TYPE
 type AnimationViewerProps = {
     speed: number;
     scale: number;
@@ -29,6 +30,7 @@ const AnimationViewer = ({
     scale, 
     color
 }: AnimationViewerProps) => {
+  // DECLARE LOCAL VARIABLE
     const animationData = useSelector((state: {animate: animateType}) => state.animate.animationData);
     const targetLayerName = useSelector((state: {animate: animateType}) => state.animate.targetLayerName);
     const animationContainer = useRef<HTMLDivElement>(null);

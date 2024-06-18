@@ -7,6 +7,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import animateReducer from './animateSlice';
 
+// STORE HOLD DIFFERENT REDUCER
 export const store = configureStore({
   reducer: {
     animate: animateReducer

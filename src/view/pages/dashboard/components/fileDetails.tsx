@@ -9,9 +9,10 @@ import { useSelector } from 'react-redux';
 // CONTEXT
 import type {animateType} from '../../../../context/animateSlice';
 
-
 const FileDetails = () => {
+    // DECLARE LOCAL VARIABLE
     const animationData = useSelector((state: {animate: animateType}) => state.animate.animationData);
+    
     return (
         <>
             <div className='section-title'>

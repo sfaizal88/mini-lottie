@@ -10,12 +10,14 @@ import { useSelector } from 'react-redux';
 // CONTEXT
 import type {animateType} from '../../../../context/animateSlice';
 
+// COMPONENT PROPS TYPE
 type PropertiesProps = {
     speed: number,
     scale: number,
     color: string,
-  }
+}
   
+// COMPONENT PROPS TYPE
 type PropertyEditorProps = {
     properties: PropertiesProps;
     onChange: (name: string, value: string | number) => void;
@@ -25,11 +27,15 @@ const PropertyEditor = ({
     properties, 
     onChange,
 }: PropertyEditorProps ) => {
+    // DECLARE LOCAL VARIABLE
     const targetLayerName = useSelector((state: {animate: animateType}) => state.animate.targetLayerName);
+
+    // HANDLE CHANGE EVENT
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         onChange(name, name === 'speed' || name === 'scale' ? parseFloat(value) : value);
     };
+    
     return (
         <div>
             <div className='fieldset'>
